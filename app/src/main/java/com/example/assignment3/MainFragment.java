@@ -72,13 +72,18 @@ public class MainFragment extends Fragment {
         view.findViewById(R.id.start).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                mListener.loadUserFragment();
             }
         });
     }
-
+    MainListener mListener;
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
+        mListener = (MainListener) context;
+    }
+
+    public interface MainListener {
+        void loadUserFragment();
     }
 }

@@ -21,7 +21,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <RadioGroup
-        android:id="@+id/radioGroup"
+        android:id="@+id/radioGroupEdit"
         android:layout_width="0dp"
         android:layout_height="146dp"
         android:layout_marginStart="8dp"
